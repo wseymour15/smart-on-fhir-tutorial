@@ -88,7 +88,7 @@
 
   function getBloodPressureValue(BPObservations, typeOfPressure) {
     var formattedBPObservations = [];
-    BPObservations.forEach(function(observation){
+    /*BPObservations.forEach(function(observation){
       var BP = observation.component.find(function(component){
         return component.code.coding.find(function(coding) {
           return coding.code == typeOfPressure;
@@ -100,7 +100,7 @@
       }
     });
 
-    return getQuantityValueAndUnit(formattedBPObservations[0]);
+    return getQuantityValueAndUnit(formattedBPObservations[0]);*/
   }
 
   function getQuantityValueAndUnit(ob) {
