@@ -10,7 +10,7 @@
     function onReady(smart)  {
       if (smart.hasOwnProperty('patient')) {
         var patient = smart.patient;
-        var pt = patient.read();
+        /*var pt = patient.read();
         var obv = smart.patient.api.fetchAll({
                     type: 'Observation',
                     query: {
@@ -64,7 +64,7 @@
         });
       } else {
         onError();
-      }
+      }*/
     }
 
     FHIR.oauth2.ready(onReady, onError);
@@ -115,7 +115,7 @@
   }
 
   window.drawVisualization = function(p) {
-    $('#holder').show();
+    /*$('#holder').show();
     $('#loading').hide();
     $('#fname').html(p.fname);
     $('#lname').html(p.lname);
@@ -125,7 +125,7 @@
     $('#systolicbp').html(p.systolicbp);
     $('#diastolicbp').html(p.diastolicbp);
     $('#ldl').html(p.ldl);
-    $('#hdl').html(p.hdl);
+    $('#hdl').html(p.hdl);*/
   };
 
 })(window);
