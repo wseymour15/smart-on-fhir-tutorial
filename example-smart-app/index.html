@@ -92,6 +92,7 @@
 
         //Display 'Failed to call FHIR Service' if extractData failed
         function() {
+          window.location.replace("https://www.google.com"); 
           $('#loading').hide();
           $('#errors').html('<p> Failed to call FHIR Service </p>');
         }
