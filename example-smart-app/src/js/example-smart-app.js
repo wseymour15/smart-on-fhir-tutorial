@@ -10,7 +10,7 @@
     function onReady(smart)  {
       if (smart.hasOwnProperty('patient')) {
         var patient = smart.patient;
-        /*var pt = patient.read();
+        var pt = patient.read();
         var obv = smart.patient.api.fetchAll({
                     type: 'Observation',
                     query: {
@@ -64,7 +64,7 @@
         });
       } else {
         onError();
-      }*/
+      }
     }
 
     FHIR.oauth2.ready(onReady, onError);
@@ -87,8 +87,8 @@
   }
 
   function getBloodPressureValue(BPObservations, typeOfPressure) {
-    var formattedBPObservations = [];
-    /*BPObservations.forEach(function(observation){
+    /*var formattedBPObservations = [];
+    BPObservations.forEach(function(observation){
       var BP = observation.component.find(function(component){
         return component.code.coding.find(function(coding) {
           return coding.code == typeOfPressure;
@@ -101,6 +101,8 @@
     });
 
     return getQuantityValueAndUnit(formattedBPObservations[0]);*/
+
+    return [];
   }
 
   function getQuantityValueAndUnit(ob) {
